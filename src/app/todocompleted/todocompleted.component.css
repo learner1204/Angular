@@ -1,0 +1,8 @@
+div{
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px goldenrod;
+    background-color:rgb(171, 245, 171);
+    padding : 10px;
+    font-size: 18px;
+}

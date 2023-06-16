@@ -1,0 +1,12 @@
+<div>
+    <h4>All Task</h4>
+    <input type="text" placeholder="Enter New Task" id="new_task" name="new_task" #new_task/> 
+     <button class="btn btn-warning btn-sm" (click)="add_task(new_task.value)">Add</button>
+
+    <div *ngFor="let todo of todos">
+
+        {{todo.id}}. {{todo.task}} | {{todo.status}} 
+
+        <input type="checkbox" class="float-end" (click)="toggle_task(todo.id)" [checked]="todo.status">
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <h4>Pending Task List</h4>
+    <div *ngFor="let todo of todos_pending">
+
+        {{todo.id}}. {{todo.task}} | {{todo.status}} 
+            <input type="checkbox" class="float-end" (click)="toggle_task(todo.id)" [checked]="todo.status">
+
+
+    </div>
+</div>

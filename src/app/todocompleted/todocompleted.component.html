@@ -1,0 +1,10 @@
+<div>
+    <h4>Completed Task List</h4>
+    <div *ngFor="let todo of todos_completed">
+
+        {{todo.id}}. {{todo.task}} | {{todo.status}} 
+            <input type="checkbox" class="float-end" (click)="toggle_task(todo.id)" [checked]="todo.status">
+
+
+    </div>
+</div>
